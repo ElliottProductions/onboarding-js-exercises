@@ -70,13 +70,14 @@ console.log(
 //    the current year
 function daysInMonth(monthNum) {
     if (monthNum >= 1, monthNum <= 12){
+        check monthNum
         if(monthNum === 2){
             return 29
         }
-        if(monthNum === 3){
+        if(monthNum === 3 || monthNum === 1 || monthNum === 5 || monthNum === 7 || monthNum === 8 || monthNum === 10 || monthNum === 12){
             return 31
         }
-        if(monthNum === 11){
+        if(monthNum === 11 || monthNum === 4 || monthNum === 6 || monthNum === 9 || ){
             return 30
         }
     }else{
